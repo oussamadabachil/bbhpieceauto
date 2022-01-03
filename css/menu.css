@@ -1,7 +1,8 @@
 .btbt{
     z-index: 14;
-
-}
+    display: block;
+    margin-left: -3rem;
+  }
 .menu {
     background-color: transparent;
     border: none;
