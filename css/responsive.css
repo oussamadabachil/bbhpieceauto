@@ -68,6 +68,7 @@
     }
     .show_menu_list>li{
         padding-bottom: 6rem;
+        list-style: none;
     }
     .show_menu_list>li>a{
         text-decoration: none;
