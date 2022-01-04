@@ -3,8 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    scroll-behavior: smooth;
 
+}
 body{
     width: 100%;
 }
@@ -31,6 +32,7 @@ header>.desktop_menu>li:first-child{
     grid-column: 1/5;
     grid-row: 1;}
 header>.desktop_menu>li{
+    color: white;
     list-style: none;
     font-family: Roboto;
     width: 100%;
@@ -38,6 +40,14 @@ header>.desktop_menu>li{
     padding: .3rem;
     transition: all .3s;
 
+
+}
+main>.daypresent{
+    position: absolute;
+    z-index: 3;
+    top: .5rem;
+    right: 2rem;
+    color: white;
 
 }
 
@@ -218,6 +228,8 @@ font-size: 2rem;
 }
 
 .explication>p{
+    height:100%;
+    overflow: scroll;
     font-size: 2rem;
     padding-top: 2rem;
     font-family: Roboto;
@@ -260,6 +272,10 @@ height: 50rem;
 }.grid_info>div>ul>li{
     font-family: Roboto;
 
+}
+
+.show_menu_list>li{
+    color: white;
 }
 .titlepresent{
     display: block;
