@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bellota+Text:wght@300&family=Lato:ital,wght@1,100&family=Open+Sans+Condensed:wght@300&family=Outfit:wght@400;900&family=Roboto:ital,wght@0,100;0,300;1,100&family=Shizuru&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body{
+    width: 100%;
+}
+/*HEADER*/
+header{
+    position: relative;
+}
+header>.desktop_menu{
+    top: 0;
+    z-index: 10;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.192);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+header>.desktop_menu>li:first-child{
+    font-weight: 600;
+    grid-column: 1/5;
+    grid-row: 1;}
+header>.desktop_menu>li{
+    color: white;
+    list-style: none;
+    font-family: Roboto;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: .3rem;
+    transition: all .3s;
+
+
+}
+main>.daypresent{
+    position: absolute;
+    z-index: 3;
+    top: .5rem;
+    right: 2rem;
+    color: white;
+
+}
+
+header>.desktop_menu>li:hover{
+    transform: scale(1.2);
+
+    transition: all .3s;
+   
+
+}
+header>.desktop_menu>li>a,header>ul>li>a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+
+
+.mobile_menu{
+    display: none;
+}
+.grid_call_mail{
+    display: none;
+}
+
+
+main>h1{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+
+ul>div>form{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+.col>input{
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: none;
+    border-bottom: .1rem solid #ccc;
+}
+
+form>.btn{
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+
+}
+
+.form-group>textarea{
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: none;
+    border-bottom: .1rem solid #ccc;
+}

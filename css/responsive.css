@@ -2,6 +2,7 @@
 @media screen and (max-width: 900px) {
 
     .spe_grid,.grid_info{
+        margin: 55rem auto;
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
@@ -122,16 +123,6 @@
         transform: translate(-50%,-50%);
     }
 
-.explication>p{
-    font-size: 1.4rem;
-    padding-top: 2rem;
-    font-family: Roboto;
-    width: 90%;
-    font-weight: 900;
-    text-align: center;
-    margin: 0 auto;
-}
-
 
 .grid_call_mail{
     width:90%;
@@ -144,7 +135,6 @@
     border-radius: 5rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-
     margin: 0 auto;
     z-index: 100;
 
@@ -163,16 +153,16 @@
 
 .grid_call_mail>.devis_a_btn:before{
     background-image: url(../assets/ico_mail.png);
-       background-position: center center;
-       background-size: contain;
-       display: inline-block;
-       margin-right: 1rem;
-       width: 2.2rem;
-       height: 2.3rem;
-       content: "";
-       border: .1rem solid #fdf4e9;
-       border-radius: 100%;       ;
-       vertical-align: middle;
+    background-position: center center;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 1rem;
+    width: 2.2rem;
+    height: 2.3rem;
+    content: "";
+    border: .1rem solid #fdf4e9;
+    border-radius: 100%;       ;
+    vertical-align: middle;
 }
 .grid_call_mail>.devis_b_btn::before{
     background-image: url(../assets/logo_phone.png);
@@ -187,4 +177,22 @@
     border-radius: 100%;       ;
     vertical-align: middle;
 }
+main>.grid_essenital_flip{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+main>.grid_essenital_flip>div{
+    height: 25rem;
+}
+.flip-card-back>p{
+    overflow-y: auto;
+  font-size: 1.4rem;  
+  font-family: Roboto;
+  width: 90%;
+  text-align: center;
+  line-height: 3rem;
+  display: block;
+  margin: 2rem auto;
+  }
 }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/test.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="grid_essenital_flip">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front first_card">
+       
+        </div>
+        <div class="flip-card-back">
+          <p>Reprogrammation de vos clés de votre véhicule . Toutes marques. Sur RDV avec présentation de votre carte grise. Gestion de votre dossier sans frais</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" >
+      <div class="flip-card-inner">
+        <div class="flip-card-front second_card">
+        </div>
+        <div class="flip-card-back">
+          <p>Passage à l'outil diagnostic toutes marques. Compte rendu avec devis (*payant).Effacement des défauts</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front third_card">
+        </div>
+        <div class="flip-card-back">
+          <p>Lors de vos achats de pièce auto n'hésitez pas à consulter notre équipe pour le montage de vos pièces</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<script>
+
+var card = document.querySelector('.card');
+card.addEventListener( 'click', function() {
+  card.classList.toggle('is-flipped');
+});
+</script>
+</body>
+
+</html>
+
+

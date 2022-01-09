@@ -9,13 +9,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     let seconda_b = document.querySelector(".second_a")
     let thirda_b = document.querySelector(".third_a")
 
-let hideh = document.querySelector(".titlepresent")
 
-    button_show.addEventListener("click",()=>{
-        show_form_div.classList.toggle("form_contact_show")
-        hide_div_list.classList.toggle("list_date_hide")
-        hideh.classList.toggle("hide")
-    })
 
 button_m.addEventListener("click",()=>{
     menu_sh.classList.toggle("menu_show_div")
