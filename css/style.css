@@ -6,7 +6,12 @@
     scroll-behavior: smooth;
 
 }
-body{
+
+
+.html_dontscroll{
+    overflow: hidden;
+}
+.body{
     width: 100%;
 }
 /*HEADER*/
@@ -14,11 +19,14 @@ header{
     position: relative;
 }
 header>.desktop_menu{
-    top: 0;
+    border-bottom: .1rem solid  rgba(141, 127, 127, 0.171);
+top: 0;
+margin-top: 3.5rem;
     z-index: 10;
     left: 0;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.192);
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #000;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -36,25 +44,74 @@ header>.desktop_menu>li{
     list-style: none;
     font-family: Roboto;
     width: 100%;
-    font-size: 1.1rem;
-    padding: .3rem;
+    font-size: 1.4rem;
+    padding: .9rem;
     transition: all .3s;
 
 
 }
-main>.daypresent{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+
+main>.devis_header{
+    border-radius: 2rem;
+    background-color: white;
     position: absolute;
-    z-index: 3;
-    top: .5rem;
+    z-index: 30;
+    top: 2.5rem;
+    left: 2rem;
+    color: white;
+
+}
+
+header>.waterproof>p{
+    color: white;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+header>.waterproof{
+    background-color: rgb(0, 0, 0);
+    padding-bottom: .5rem;
+}
+main>.daypresent{
+    padding: .5rem;
+    border-radius: 2rem;
+    background-color: white;
+    border: .1rem solid white;
+    position: absolute;
+    z-index: 30;
+    top: 3.5rem;
     right: 2rem;
     color: white;
 
 }
-main>.daypresent>li{
+
+main> .daypresent>li>a{
+    text-decoration: none;
+    padding-right: .4rem;
+    color: black;
+    margin-left: .4rem;
+    padding-left: .4rem;
+    border-left: .1rem solid rgb(0, 0, 0);
+
+}
+main>.devis_header>li{
+    text-align: center;
+    list-style: none;
+}
+main>.devis_header>li>a
+{
+    text-align: center;
+    text-decoration: none;
+    padding-right: .4rem;
+    color: black;
+    margin-left: .4rem;
+    padding-left: .4rem;
+}
+
+main>.daypresent>li,.main>.devis_header>li{
+    color: black;
+
     display: block;
-    border-left: .1rem solid white;
     list-style: none;
 
 }
@@ -248,12 +305,45 @@ main>div>img{
 }
 
 .grid_info{
+
     display: grid;
     grid-template-columns: repeat(2,1fr);
     width: 80%;
-    margin: 0 auto;
+    margin: 3rem auto;
 }
+.menuu_toggled>img{
+    display: block;
+    overflow: hidden;
+    width: 90%;
 
+    margin: 1rem auto;
+}
+.menuu_toggled{
+    position: absolute;
+    transition: all .3s;
+    left: 50%;
+    top:22.35rem;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: auto;
+opacity: 0;
+visibility: hidden;    z-index: 123;
+    background-color: rgb(255, 255, 255);
+}
+.menuu_toggled_hide{
+    transition: all .3s;
+
+    position: absolute;
+    left: 50%;
+    top:20rem;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: auto;
+opacity: 1;
+visibility: visible;    z-index: 123;
+    background-color: rgb(255, 255, 255);
+    
+}
 .grid_info>iframe{
     width: 100%;
     height:50rem;
@@ -305,8 +395,38 @@ border: none;
 border-bottom: .1rem solid #000;
 
 }
+
+footer>.grid_ul_div{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+footer>.grid_ul_div>ul>li{
+    list-style: none;
+    padding: .3rem;
+}
+#horaire_id{
+    padding-left: 4rem;
+    text-align: left;
+}
+footer>.grid_ul_div>ul>li:first-child{
+padding-bottom: 1rem;
+font-size: 1.7rem;
+}
+footer>.grid_ul_div>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+.list_date>li{
+    text-align: left;
+}
 .list_date{
     opacity: 1;
+    padding-left:4rem;
     visibility: visible;
     transition: all .3s;
 
@@ -340,11 +460,13 @@ border-bottom: .1rem solid #000;
 }
 
 footer{
-    display: block;
-    height: 20vh;
+   
+    position: absolute;
+    height: auto;
     background-color: rgb(0, 0, 0);
     width: 100%;
-    margin-top: 10rem;
+    z-index: 112112;
+
 }
 
 
